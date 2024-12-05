@@ -1,30 +1,30 @@
 {
   "expo": {
-    "name": "StickerSmash",
+    "name": "Sürdürülebilir Hasat",
     "slug": "StickerSmash",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splashscreen.png",
-      "resizeMode": "cover",
+      "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
+    "platforms": ["ios", "android", "web"],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.kreatus.surdurulebilirhasat",
+      "supportsTablet": true,
+      "newArchEnabled": true
     },
     "android": {
+      "package": "com.kreatus.surdurulebilirhasat",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "newArchEnabled": true
     },
     "web": {
       "bundler": "metro",
@@ -41,8 +41,7 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ],
-      "expo-secure-store"
+      ]
     ],
     "experiments": {
       "typedRoutes": true
